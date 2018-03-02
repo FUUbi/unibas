@@ -19,4 +19,20 @@ public class SortTests  {
     Assert.assertArrayEquals(arrayToSort, resultingArray);
   }
 
+  @Test
+  public void insertionSortShouldCorrectlySortEmptyIntegerArray() {
+    Integer[] emptyArray = new Integer[0];
+    Integer[] resultingArray = new Integer[0];
+    InsertionSort.sort(emptyArray);
+    Assert.assertArrayEquals(emptyArray, resultingArray);
+  }
+
+  @Test
+  public void insertionSortShouldCorrectlySortNonemptyIntegerArray() {
+    Integer[] arrayToSort = new Integer[] {1, 4, 2, 5, 4};
+    Integer[] resultingArray = new Integer[] {1, 2, 4, 4, 5};
+    InsertionSort.sort(arrayToSort);
+    Assert.assertArrayEquals(arrayToSort, resultingArray);
+  }
+
 }
