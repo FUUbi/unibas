@@ -3,7 +3,7 @@ public class Main {
   /** The method runs insertion sort for an example instance. **/
   public static void main(String[] args) {
     int[] array = new int[] {7, 5, 3, 5, 2, 9};
-    InsertionSort.sort(array);
+    MergeSort.sort(array);
     for (int i = 0; i < array.length; i++) {
       System.out.print(array[i]);
       System.out.print(" ");
